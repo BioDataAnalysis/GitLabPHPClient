@@ -78,6 +78,7 @@ class Projects extends AbstractApi
             'id', 'name', 'path', 'created_at', 'updated_at', 'last_activity_at',
             'repository_size', 'storage_size', 'packages_size', 'wiki_size',
         ];
+        $resolver->setDefined('pagination');
         $resolver->setDefined('order_by')
             ->setAllowedValues('order_by', $orderBy)
         ;
